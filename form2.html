@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="save.php" method="get">
+            <table align="center" cellpadding="12" width="500">
+                <caption>
+                    <h1> value, readonly, disabled, tabindex </h1>
+                </caption>
+                <tr>
+                    <th> Application No </th>
+                    <td> <input type="number" name="appno" value="8888888888" disabled/> </td>
+                </tr>
+                <tr>
+                    <th> Your Full Name </th>
+                    <td> <input type="text" name="fname" tabindex="1"/> </td>
+                </tr>
+                <tr>
+                    <th> Your Age </th>
+                    <td> <input type="text" name="age"/> </td>
+                </tr>
+
+                <tr>
+                    <th> Your City </th>
+                    <td> <input type="text" name="city" tabindex="2"/> </td>
+                </tr>
+                <tr>
+                    <th> Education </th>
+                    <td> <input type="text" name="edu" tabindex="3"/> </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <button> Save </button>
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

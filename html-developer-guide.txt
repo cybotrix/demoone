@@ -1,0 +1,195 @@
+
+HTML - Hypertext Markup Language
+       It has collections of pre-defined tags.
+       It use to create basic structure of webpage.
+       The html tags use to collect input from user and use to display output to user via web browser.
+       The html tags has limited property and values. due to this limitation CSS & js is required.
+
+    How it Work ?
+
+        Responsive Web page = HTML( tags ) + CSS (property & values)
+
+    Tags ? 
+        <>   open tag 
+        </>  close tag 
+
+    1. Type of tags in html ?
+          =>input tags  - it collect different type of input from user via browser
+          =>output tags - it display different type of output to user via browser
+
+    2. Structure / Syntax of html tags 
+         =>Dependent tag  - those tags open seprate and close seprate 
+            example 
+                <html> </html> 
+                <body> </body>
+                <h1>  </h1>
+
+         =>Independent tag 
+            example  - those tags, that has only open.
+                <br>
+                <img>
+                <hello>
+            Note - React do not support Independent tag. 
+
+         =>Self Closing Tag - Those tags, that open and close together
+             example
+                <br/>
+                <img/>
+                <hello/>
+            Note - It get supported in all language.
+
+
+    3. The Behavior of html tags ?
+        => inline tag  - those html tags, that print statement in same line (side by side)
+        => block level tag - Those html tags, that print statement in new line by default 
+
+    Note - Using CSS , We can change the Behavior of html tags as follow 
+            ->block level tag to inline tag 
+            ->inline tag to block level tag 
+        That is called responsive webpage design 
+
+========================================================================
+        Tags 
+        ->input tags - to collect input from user 
+        ->output tags - to display output to user 
+        ->Dependent tag - if tag open and close seprate 
+        ->Independent tag - if tag has only open 
+        ->self closing tag - if tag open and close together
+        ->block level tag - it print statement in new line 
+        ->inline tag - it print statement in same line side by side.
+------------------------------------------------------------------------
+
+    =>What are valid extension of html document ?
+        .html  -  is suitable for digital marketing 
+        .htm 
+
+    =>Structure of html document?
+        ->html start to end called document.
+            ->head 
+                ->Analytics / Marketing section 
+                ->Library section 
+                    ->css, javascript, other library 
+            ->body 
+                ->tags for input & output 
+==============================================================
+    heading tag - h1 to h6 
+        ->it use to create headline of webpage. 
+        ->use h1 min and max 1 time in each page. the h1 should hold main keyword
+          that get search by user on internet.
+--------------------------------------------------------------
+    p - it use to display text data in webpage. use p tag if text is more than 
+        130 char or 1 line. each p tag should hold max 4 to 5 lines for better
+        readability. each p tag should have a sub heading using h2 to h6
+---------------------------------------------------------------
+    tags for text data upto 130 or small text 
+        b, i, u, font, strong, em...
+---------------------------------------------------------------
+    Type of list in html ?
+    1. OL - order list 
+         type="1"
+         type="A"
+         type="a"
+         type="I"
+         type="i"
+
+    2. UL - unorder list 
+        type="disc"
+        type="square"
+        type="circle"
+        type="none"
+        
+    3. DL - definition list 
+        dt - definition title - it create headline of content 
+        dd - definition details - it use to display details about content
+       definitionlist.html 
+-------------------------------------------------------------------------
+    How to display image ?
+        <img src="1.jpg" height="200" width="300" alt="Sorry this image is not available"/>
+-------------------------------------------------------------------------
+    How to link the pages in html 
+        <a href="nextpage.html" title="" target=""> Text For Link </a> 
+
+        a - is tag name 
+        href - it is name of property that set url for next page 
+        title - it is for digital marketing (it introduce to search engine that what is purpose this link)
+        target - it use to set location that where next page will open 
+                as new tab 
+    link1.html 
+    link2.html 
+
+    Type of target ?
+        target="_self"  -> it open the next page in same tab.
+        target="_new"   -> it open the next page in new tab but only at 1st click
+        target="_blank" -> it open the next page in new tab on every click. 
+
+    home.html 
+    service.html 
+-------------------------------------------------------------------------
+    Table in html 
+    ->1 method - syntax 
+
+        table 
+            ->caption 
+            ->tr (table row) - its block level tag 
+                ->th (table heading)
+                ->td (table data)
+        
+    ->2 method - syntax 
+        table 
+            ->thead - it cover upper part of table
+                ->tr 
+                    ->th 
+            ->tbody - it cover middle part of table 
+                ->tr 
+                    ->td 
+            ->tfoot - it cover bottom part of table
+                ->tr 
+                    ->th 
+
+    ->property in table, thead, tbody, tfoot, tr, th, td 
+        =>align - left, center, right 
+        =>valign - top, middle, bottom 
+        =>border - 
+        =>cellpadding - it apply space inside th, td 
+        =>cellspacing - it apply space outside of th, td 
+    table1.html
+        =>colspan - it combine space of 2 or more th, td - left to right 
+        =>rowspan - it combine space of 2 or more tr - top to bottom 
+----------------------------------------------------------------------------
+    Input tags 
+      =>text 
+      =>number 
+      =>email 
+      =>password 
+      =>file 
+      =>date 
+      =>datetime-local
+      =>textarea - for multiline input 
+      =>select 
+      =>radio 
+      =>check 
+      =>color 
+      =>button 
+          ->submit 
+          ->reset 
+          ->button 
+
+    ----property in input tags----
+      placeholder - it is for input guidance.
+      maxlength - it use to set the input limit (in character) (text, email, password, textarea)
+      size - it resize width of input tag (text, email, password)
+      name - it create container to hold data given by user in input box
+      value - it use to display default value in input tags.
+      readonly - it make input tag read only. but value will pass to backend 
+      disabled - it complete disabled the input element, it do not pass the value to backend 
+      tabindex - it use to set sequence for cursor. how the cursor should move
+
+    form -> it is parent container of all input tags.
+         -> action - it use to set url of backend server where the form data should get submitted.
+         -> method - it use to set type of communication either secure or unsecure 
+              get -  it send data via browser url and data the data will be fully visible. - unsecure 
+              post - it send data in hidden so fully secure 
+              put -  it send request to server to update all value 
+              patch - it send request to server to update only modified value
+              delete - it send request to server to delete any record 
+      

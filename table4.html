@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Table </title>
+    </head>
+    <body bgcolor="skyblue">
+        <h1 align="center"> Table Rowspan & Colspan </h1>
+        <table align="center" border="100" cellpadding="10" cellspacing="0" bgcolor="lightgreen">
+            <thead>
+                <tr bgcolor="pink">
+                    <th> Emp Id </th>
+                    <th> Employee Name </th>
+                    <th> Designation </th>
+                    <th> Salary </th>
+                    <th> Reporting To </th>
+                    <th> Project Name </th>
+                    <th> Experience </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td> 01 </td>
+                    <td> Sumit Kumar </td>
+                    <td> Web Developer </td>
+                    <td> Rs.18000 </td>
+                    <td rowspan="2"> Manoj Team Lead </td>
+                    <td rowspan="3"> Leads Management </td>
+                    <td rowspan="2"> 2 Years </td>
+                </tr>
+                <tr>
+                    <td> 02 </td>
+                    <td> Anil Kumar </td>
+                    <td> SEO Executive </td>
+                    <td> Rs.15000 </td>
+                </tr>
+                <tr>
+                    <td> 03 </td>
+                    <td> Suresh P </td>
+                    <td> Sales & Marketing </td>
+                    <td> Rs.18000 </td>
+                    <td> Sunil </td>
+                    <td rowspan="2"> 3 Years </td>
+                </tr>
+                <tr>
+                    <td> 04 </td>
+                    <td> Alex </td>
+                    <td> HR </td>
+                    <td> Rs.12000 </td>
+                    <td> Ganesh </td>
+                    <td> Email Marketing App </td>
+                </tr>
+                <tr>
+                    <td> 05 </td>
+                    <td> Mahesh </td>
+                    <td> DBA </td>
+                    <td> Rs. 15000 </td>
+                    <td colspan="2"></td>
+                    <td> 1 Year </td>
+                </tr>
+                <tr>
+                    <td> 06 </td>
+                    <td> Krish </td>
+                    <td> Digital Marketing </td>
+                    <td> Rs.23000 </td>
+                    <td> Punit </td>
+                    <td> Leads Management </td>
+                    <td> 2 Years </td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr bgcolor="lightgrey">
+                    <th> Emp Id </th>
+                    <th> Employee Name </th>
+                    <th> Designation </th>
+                    <th> Salary </th>
+                    <th> Reporting To </th>
+                    <th> Project Name </th>
+                    <th> Experience </th>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
